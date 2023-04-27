@@ -1,0 +1,159 @@
+/* General */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.row{
+    margin: 0;
+}
+
+.container{
+    padding: 70px 0;
+}
+
+p, li{
+    color: #444;
+    font-size: 14px;
+}
+
+
+
+/* Navbar Area */
+header, .navbar{
+    background-color: #353d41;
+    padding-inline: 1rem;
+}
+
+
+#nv-container{
+    padding-block: 0;
+}
+
+#logo{
+    width: 75px;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    padding: 0;
+    color: whitesmoke;
+}
+
+.navbar-brand:hover{
+    color: white;
+}
+
+
+#navbar-links a{
+    font-size: small;
+    text-transform: uppercase;
+    color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-inline: .8rem 0;
+}
+
+
+
+/* Slider Example */
+.container-fluid{
+    padding: 0;
+}
+
+.carousel-inner {
+    height: 80%;
+    display: flex;
+}
+
+#carouselExampleIndicators .carousel-caption{
+    top: 45%;
+}
+
+#carouselExampleIndicators .carousel-caption h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#carouselExampleIndicators .carousel-caption p{
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: white;
+}
+
+#carouselExampleIndicators .carousel-inner img{
+    filter: brightness(50%);
+}
+
+.main-btn{
+    text-decoration: none;
+    background-color: #65daf9;
+    color: white;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+
+.main-btn:hover{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border-color: #65daf9;
+}
+
+/* About Area */
+
+#about-area{
+    background-color: #f9f9f9;
+}
+
+.main-title{
+    color: #444;
+    text-transform: uppercase;
+    margin: 0 0 65px 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Left Side */
+
+.about-title{
+    color: #444;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#about-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+#about-list li{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    list-style: none;
+}
+
+#about-list li i{
+    color: rgb(42, 207, 194);
+}
+
+/* Right Side */
