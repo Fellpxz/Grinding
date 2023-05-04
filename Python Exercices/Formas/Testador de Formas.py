@@ -4,28 +4,34 @@
 
 import time
 
-# Não tem como você colocar um while dentro de uma função como essa!
-def squareBuild(n):
-    for i in range(n):
-        if i == 0 or i == n-1:
-            print("*" * n)
-        else:
-            print("*" + " " * (n-2) + "*")
-
-        time.sleep(1)
+# INICIAR WHILE
 
 while True:
+    #VERIFICAÇÃO
+    #POSSIBILIDADES DE ERROS
     try:
+        #INPUT DA VARIAVEL PRINCIPAL
         n = int(input("Digite um número natural: "))
-        if n < 2:
-            print("O valor precisa ser maior ou igual a 2 para prosseguir com a aplicação!")
-            continue
+        #CONDIÇÕES DE FUNCIONAMENTO PARA ESSE CÓDIGO 
+        #COMO NÃO TEM EU COMENTEI
+
+        #if n < 2:
+            #print("O valor precisa ser maior ou igual a 2 para prosseguir com a aplicação!")
+           #continue
     except ValueError:
         print("Valor inválido. Certifique-se de que o valor inserido seja um número.")
         continue
 
-    squareBuild(n)
+    #CÓDIGO PRINCIPAL
+    for i in range(n):
+        if i % 2 == 0:
+            print("O")
+        else:
+            print(" O")
 
+        time.sleep(1)
+
+    #SCRIPT DA REPETIÇÃO DA APLICAÇÂO
     while True:
         resposta = input("Deseja usar a aplicação novamente? (S/N)").lower()
         if resposta == 'n':
