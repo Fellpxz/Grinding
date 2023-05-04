@@ -18,7 +18,8 @@ for i in range(1, n+1):
         middle = "*" + " " * (i - 1) + "*"
         print(middle.center(2*n - 1))
     else:
-        final = "*" + " " * i + "*"
+        espacos = " " * (i - 2)
+        final = "*" + espacos + " " + espacos + "*"
         print(final.center(2*n - 1))
 
 #Quadrado OCO
@@ -40,3 +41,12 @@ for i in range(n):
         print("O")
     else:
         print(" O")
+
+#LOSANGO (FUNCIONAR APENAS COM IMPAR)
+for i in range(1, n + 1, 2):
+    superior = "O" * i
+    print(superior.center(n))
+
+for i in range(n-2, 0, -2):
+    inferior = "O" * i
+    print(inferior.center(n))

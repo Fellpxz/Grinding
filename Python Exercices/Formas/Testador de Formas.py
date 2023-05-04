@@ -22,14 +22,19 @@ while True:
         print("Valor inválido. Certifique-se de que o valor inserido seja um número.")
         continue
 
-    #CÓDIGO PRINCIPAL
-    for i in range(n):
-        if i % 2 == 0:
-            print("O")
-        else:
-            print(" O")
+    #CÓDIGO PRINCIPAL   
+    for i in range(1, n+1, 2):
+        espacos = " " * ((n - i) // 2)
+        asteriscos = "*" * i
+        linha = espacos + asteriscos + espacos
+        print(linha)
 
-        time.sleep(1)
+    # Metade inferior do losango
+    for i in range(n-2, 0, -2):
+        espacos = " " * ((n - i) // 2)
+        asteriscos = "*" * i
+        linha = espacos + asteriscos + espacos
+        print(linha)
 
     #SCRIPT DA REPETIÇÃO DA APLICAÇÂO
     while True:
